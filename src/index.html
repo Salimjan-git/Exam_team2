@@ -4,10 +4,640 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/Icon/fontawesome-free-6.7.2-web/css/all.css">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body>
+    <!-- Top Banner -->
+    <div class="bg-amber-100 text-center py-3 px-4">
+        <span class="text-gray-700 text-sm">Limited Time Only: Up to 60% off Dining Furniture</span>
+        <a href="#" class="text-gray-900 font-semibold underline ml-4">Shop Now</a>
+    </div>
+
+    <!-- Top Header -->
+    <div class="border-b border-gray-200 py-2 px-4 md:px-8">
+        <div class="flex items-center justify-between text-sm text-gray-600">
+            <!-- Language & Currency -->
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>English</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span>USD</span>
+                </div>
+            </div>
+            
+            <!-- Right Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-store"></i>
+                    <span>Track Order</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>Help Center</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <span>Compare</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Wishlist</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="py-4 px-4 md:px-8">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="https://motta.uix.store/wp-content/themes/motta/images/logo.svg" alt="">
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hidden md:flex items-center flex-1 max-w-2xl mx-8">
+                <div class="flex w-full shadow-md rounded-md overflow-hidden">
+                    <input type="text" placeholder="Search for anything" class="flex-1 px-4 py-3 border-0 focus:outline-none bg-white">
+                    <div class="w-px bg-gray-300"></div>
+                    <select class="px-4 py-3 border-0 bg-white text-gray-600 focus:outline-none min-w-32">
+                        <option>All Categories</option>
+                    </select>
+                    <div class="w-px bg-gray-300"></div>
+                    <button class="px-6 py-3 bg-blue-600 text-white hover:bg-blue-700">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Account & Cart -->
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex items-center space-x-1">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="text-gray-700">Account</span>
+                </div>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="text-gray-700">Cart</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="border-t border-gray-200 py-4 px-4 md:px-8">
+        <div class="flex items-center justify-between">
+
+<!-- Shop by Category -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-list-ul"></i>
+                <select class="font-semibold text-gray-900 bg-transparent border-none outline-none">
+                    <option>Shop by Category</option>
+                    <option>Electronics</option>
+                    <option>Clothing</option>
+                    <option>Home & Garden</option>
+                    <option>Sports</option>
+                </select>
+            </div>
+
+            <!-- Main Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Features</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Pages</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Blog</a>
+            </div>
+
+            <!-- Shop Today's Deals -->
+            <div class="hidden md:block">
+                <span class="font-semibold text-gray-900">Shop Today's Deals</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="px-4 md:px-8 py-4 bg-gray-50">
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+            <a href="#" class="hover:text-gray-900">Home</a>
+            <span>></span>
+            <span class="text-gray-900">Home & Garden</span>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <div class="px-4 md:px-8 py-8 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Home & Garden</h1>
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="px-4 md:px-8 py-8">
+        <div class="flex items-center justify-center space-x-4 md:space-x-11 overflow-x-auto pb-4">
+            <!-- ALL -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-500 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-gray-800 hover:bg-red-600 rounded-full flex items-center justify-center mb-3">
+                    <span class="text-white font-semibold text-sm">ALL</span>
+                </div>
+                <span class="text-gray-700 text-sm font-medium">Shop All</span>
+            </div>
+
+            <!-- NEW -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-500 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-green-100 hover:bg-green-300 transition-colors duration-300 ease-in rounded-full flex items-center justify-center mb-3">
+                    <span class="text-green-600 font-semibold text-sm">NEW</span>
+                </div>
+                <span class="text-gray-700 text-sm font-medium">New Arrivals</span>
+            </div>
+
+            <!-- SALE -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-500 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-red-100 hover:bg-red-300 transition-colors duration-300 ease-in rounded-full flex items-center justify-center mb-3">
+                    <span class="text-red-600 font-semibold text-sm">SALE</span>
+                </div>
+                <span class="text-gray-700 text-sm font-medium">Sale</span>
+            </div>
+
+            <!-- Furniture -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20  rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/07/furniture.jpg?resize=150%2C150&ssl=1" alt="Furniture" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium hover:border-b-2 border-black transition-all duration-300 ease-in-out">Furniture</span>
+            </div>
+
+            <!-- Home Decor -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-gray-200 rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/home-accessories.jpg?resize=150%2C150&ssl=1" alt="Home Decor" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium hover:border-b-2 border-black transition-all duration-300 ease-in-out">Home...</span>
+            </div>
+
+<!-- Kitchen & dining -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-teal-100 rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/kitchendining.jpg?resize=150%2C150&ssl=1" alt="Kitchen" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium">Kitchen & dining</span>
+            </div>
+
+            <!-- Appliances -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-red-200 rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/appliances.jpg?resize=150%2C150&ssl=1" alt="Appliances" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium">Appliances</span>
+            </div>
+
+            <!-- Lamp & Lighting -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-gray-300 rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/lamp-lighting.jpg?resize=150%2C150&ssl=1" alt="Lamp" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium">Lamp & Lighting</span>
+            </div>
+
+            <!-- House Plants -->
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-green-200 rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/house-plants.jpg?resize=150%2C150&ssl=1" alt="Plants" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium">House Plants</span>
+            </div>
+
+            <div class="flex flex-col items-center hover:scale-110 transition-all duration-300 ease-in-out py-4">
+                <div class="w-16 h-16 md:w-20 md:h-20 bg-green-200 rounded-full flex items-center justify-center mb-3">
+                    <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/bathroom.jpg?resize=150%2C150&ssl=1" alt="Plants" class="w-full h-full rounded-full">
+                </div>
+                <span class="text-gray-700 text-sm font-medium">Bath</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="px-4 md:px-8 py-12">
+        <!-- Filter & Sort Bar -->
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
+            <div class="flex items-center space-x-4">
+                <button class=" flex items-center space-x-2 md:px-4 px-10 py-2 border md:border-gray-300 border-black rounded-md hover:border-gray-400">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span class="text-gray-700">Filter</span>
+                </button>
+                <span class="text-gray-500 text-sm md:block hidden">1-16 of 516 Results</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <span class="text-gray-700 text-sm md:block hidden">Sort by:</span>
+                    <select class="md:px-4 px-7 py-2 border md:border-gray-300 border-black rounded-md text-sm ">
+                        <option>Default</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest</option>
+                    </select>
+                </div>
+                <div class="hidden md:flex items-center space-x-2">
+                    <button class="p-2 border border-gray-300 rounded hover:bg-gray-50">
+                        <i class="fa-solid fa-border-all text-[22px]"></i>
+                    </button>
+                    <button class="p-2 border border-gray-400 rounded bg-gray-100">
+                        <i class="fa-solid fa-grip text-[22px]"></i>
+                    </button>
+                    <button class="p-2 border border-gray-300 rounded hover:bg-gray-50">
+                        <i class="fa-solid fa-table-cells text-[22px]"></i>
+                    </button>
+                    <button class="p-2 border border-gray-300 rounded hover:bg-gray-50">
+                        <i class="fa-solid fa-list text-[22px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:flex block md:space-x-4">
+
+            <div class="w-[100%] md:block hidden overflow-hidden">
+                <div class="flex justify-between border-b ">
+                    <div>
+                        <h3 class="hover:border-red-700 hover:text-red-700 font-bold text-xl">Refine by</h3>
+                        <button class="bg-[#1d2128] text-white px-3 py-2 my-6 hover:bg-red-800">
+                            <h5>Home & Garden &nbsp;&nbsp;<i class="fa-solid fa-xmark text-gray-200"></i></h5>
+                        </button>
+                    </div>
+                    <div>
+                        <h3 class="pb-1 border-b-2 border-black hover:border-red-700 hover:text-red-700 font-semibold">Clear All</h3>
+
+                    </div>
+                </div>
+
+                <div class="py-7 border-b font-semibold text-[18px] flex justify-between">
+                    <h3>Categories</h3>
+                    <p class="text-2xl">+</p>
+                </div>
+                
+                <div class="border-b">
+                    <div class="py-7 font-semibold text-[18px] flex justify-between">
+                        <h3>Price</h3>
+                        <p class="text-2xl">-</p>
+                    </div>
+                    <div>
+                        <form action="#" class="flex space-x-3">
+                            <input id="check1" type="checkbox" class="w-5 h-5">
+                            <label class="text-gray-500 hover:text-red-700" for="check1">0 - $100.00</label>
+                        </form>
+                        <form action="#" class="flex space-x-3 py-7">
+                            <input id="check2" type="checkbox" class="w-5 h-5">
+                            <label class="text-gray-500 hover:text-red-700" for="check2">$100.00 - $200.00</label>
+                        </form>
+                        <form action="#" class="flex space-x-3">
+                            <input id="check3" type="checkbox" class="w-5 h-5">
+                            <label class="text-gray-500 " for="check3">250.00+</label>
+                        </form>
+                    </div>
+                    <div class="flex space-x-4 py-7 justify-center">
+                        <button class="w-[33%] h-[50px] border-2 border-gray-300 hover:bg-yellow-200 hover:-translate-y-2 transition-all duration-200 ease-in">Min</button>
+                        <button class="w-[33%] h-[50px] border-2 border-gray-300 hover:bg-green-400 hover:-translate-y-2 transition-all duration-200 ease-in-out">Max</button> 
+                        <button class="w-[33%] h-[50px] border-2 border-gray-300 bg-black text-white hover:bg-red-600 hover:-translate-y-2 transition-all duration-200 ease-out">Apple</button> 
+                    </div>
+                </div>
+
+                <div class="border-b overflow-hidden">
+                    <div class="py-7 font-semibold text-[18px] flex justify-between">
+                        <h3>Color</h3>
+                        <p class="text-2xl">-</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-black">
+                                <div class="w-[30px] h-[30px] bg-black rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Black</p>
+                        </div>
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-blue-400 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-blue-400 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>blue</p>
+                        </div>
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-red-900 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-red-900 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Browen</p>
+                        </div>
+                        
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-gray-500 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-gray-500 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Gray</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-green-700">
+                                <div class="w-[30px] h-[30px] bg-green-700 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Green</p>
+                        </div>
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-orange-500 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-orange-500 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Orange</p>
+                        </div>
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-red-900 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-red-900 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Browen</p>
+                        </div>
+                        
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-gray-500 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-gray-500 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Gray</p>
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-16">
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-black">
+                                <div class="w-[30px] h-[30px] bg-black rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>Black</p>
+                        </div>
+                        <div class="pb-7">
+                            <div class="w-[38px] h-[38px] rounded-full bg-white border-4 border-blue-400 mx-auto">
+                                <div class="w-[30px] h-[30px] bg-blue-400 rounded-full mb-2  hover:scale-75 transition-all duration-200 ease-in"></div>
+                            </div>
+                            <p>blue</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
+                
+                <!-- Product 1 - Coffee Dripper -->
+    
+    <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-132.jpg?fit=1400%2C1400&ssl=1" alt="Coffee Dripper Set" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-sm">Sale</span>
+                        </div>
+                        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="px-3 py-1 bg-white rounded-full shadow-md hover:bg-gray-50">
+                              <h2>+</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Coffee Dripper Set Luxury Diamond & Removable</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★★</span>
+                                <span class="text-gray-500 text-sm ml-1">(45)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-lg font-bold text-gray-900">$49.00</span>
+                                <span class="text-sm text-gray-500 line-through">$65.00</span>
+                            </div>
+                            <span class="text-xs text-gray-500">TrustPilot</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 2 - Range Hood -->
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-104.jpg?resize=768%2C768&ssl=1" alt="Range Hood" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">30 Wall Mount Range in Black Stainless Finish</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★★</span>
+                                <span class="text-gray-500 text-sm ml-1">(23)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-900">$445.00</span>
+                            <span class="text-xs text-gray-500">Alera Co.</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 3 - Refrigerator -->
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-11.jpg?resize=768%2C768&ssl=1" alt="Refrigerator" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                      <div class="absolute top-3 left-3">
+                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-sm">Sale</span>
+                        </div>
+                      </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">4-Door French Door Refrigerator with 25.5</h3>
+    
+    <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★★</span>
+                                <span class="text-gray-500 text-sm ml-1">(156)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-900">$2,789.00</span>
+                            <span class="text-xs text-gray-500">Becca</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 4 - Hand Mixer -->
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-101.jpg?fit=1400%2C1400&ssl=1" alt="Hand Mixer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">5-Speed Ultra Power Hand Mixer with Beater</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★☆</span>
+                                <span class="text-gray-500 text-sm ml-1">(89)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-900">$28.95</span>
+                            <span class="text-xs text-gray-500">Samifa</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-8.jpg?fit=1400%2C1400&ssl=1" alt="Blender" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">Sale</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">50s Retro-Style Blender with Glass Jar</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★★</span>
+                                <span class="text-gray-500 text-sm ml-1">(234)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-lg font-bold text-gray-900">$89.00</span>
+                                <span class="text-sm text-gray-500 line-through">$120.00</span>
+                            </div>
+                            <span class="text-xs text-gray-500">Hanoi Home</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-103.jpg?resize=600%2C600&ssl=1" alt="Food Processor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+    
+    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">8-Cup Food Processor - Stainless Steel Blades</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★☆</span>
+                                <span class="text-gray-500 text-sm ml-1">(67)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-900">$159.99</span>
+                            <span class="text-xs text-gray-500">Samifa</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-133.jpg?resize=600%2C600&ssl=1" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Acacia Set of 4 Wood Kitchen Utensils Natural</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★★</span>
+                                <span class="text-gray-500 text-sm ml-1">(142)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-bold text-gray-900">$24.50</span>
+                            <span class="text-xs text-gray-500">Zara Shop</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2019/01/1-1.jpg?resize=600%2C600&ssl=1" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-sm">Sale</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Afteroom Dining Chair Pox Wood Base</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★☆</span>
+                                <span class="text-gray-500 text-sm ml-1">(98)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-lg font-bold text-gray-900">$89.00</span>
+                                <span class="text-sm text-gray-500 line-through">$120.00</span>
+                            </div>
+                            <span class="text-xs text-gray-500">HauriDecors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1-143.jpg?resize=600%2C600&ssl=1" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Afteroom Dining Chair Pox Wood Base</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★☆☆☆</span>
+                                <span class="text-gray-500 text-sm ml-1">(20)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-lg font-bold text-gray-900">$46.00</span>
+                                <span class="text-sm text-gray-500 line-through">$87.00</span>
+                            </div>
+                            <span class="text-xs text-gray-500">HauriDecors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out">
+                    <div class="relative overflow-hidden">
+                        <img src="https://i0.wp.com/motta.uix.store/wp-content/uploads/2022/09/1oak-oiled.jpg?resize=600%2C600&ssl=1" alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3">
+                            <span class="bg-orange-500 text-white text-xs px-2 py-1 rounded-sm">Hot</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Afteroom Dining Chair Pox Wood Base</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★☆</span>
+                                <span class="text-gray-500 text-sm ml-1">(1)</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-lg font-bold text-gray-900">$239.00</span>
+                            </div>
+                            <span class="text-xs text-gray-500">HauriDecors</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+        
+        <!-- Load More Button -->
+        <div class="text-center">
+            <button class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 hover:scale-105 transition-all duration-300">
+                Load More Products
+            </button>
+        </div>
+    </div>
+
+<!-- Mobile Search (Hidden by default) -->
+    <div class="md:hidden px-4 py-4">
+        <div class="flex shadow-md rounded-md overflow-hidden">
+            <input type="text" placeholder="Search for anything" class="flex-1 px-4 py-2 border-0 focus:outline-none bg-white">
+            <button class="px-4 py-2 bg-blue-600 text-white">
+                <img src="" alt="Search" class="w-5 h-5">
+            </button>
+        </div>
+</body>
 </body>
 </html>
